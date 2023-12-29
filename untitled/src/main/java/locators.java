@@ -20,6 +20,8 @@ public class locators {
         driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Dan"); //enter text in form
         driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("dan@abv.bg");
         //driver.findElement(By.cssSelector("input[placeholder='Email']")).clear();
-        driver.findElement(By.xpath("//form/input[3]")).sendKeys("12345");
+        driver.findElement(By.xpath("//form/input[3]")).sendKeys("12345"); //telephone
+        driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
+        System.out.println(driver.findElement(By.cssSelector("form p")).getText());
     }
 }
