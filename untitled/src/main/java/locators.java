@@ -6,8 +6,8 @@ import java.time.Duration;
 
 public class locators {
     public static void main(String[] args) {
-        //System.setProperty("webdriver.chrome.driver", "/home/a1/Documents/chromedriver-linux64/chromedriver"); //for linux
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\dan\\Documents\\chromedriver-win64\\chromedriver.exe"); //for windows
+        System.setProperty("webdriver.chrome.driver", "/home/a1/Documents/chromedriver-linux64/chromedriver"); //for linux
+        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\dan\\Documents\\chromedriver-win64\\chromedriver.exe"); //for windows
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); //wait 5 seconds after that report for error(no such element)
 
@@ -19,6 +19,6 @@ public class locators {
         driver.findElement(By.linkText("Forgot your password?")).click(); //open text link
         driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Dan"); //enter text in form
         driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("dan@abv.bg");
-        driver.findElement(By.cssSelector("input[placeholder='Email']")).clear();
+        //driver.findElement(By.cssSelector("input[placeholder='Email']")).clear();
     }
 }
