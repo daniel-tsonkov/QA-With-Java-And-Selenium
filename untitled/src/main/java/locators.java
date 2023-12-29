@@ -9,8 +9,9 @@ public class locators {
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://rahulshettyacademy.com/locatorspractice/");
-        driver.findElement(By.id("inputUsername")).sendKeys("rahul");
-        driver.findElement(By.name("inputPassword")).sendKeys("rahul123");
-        driver.findElement(By.className("signInBtn")).click();
+        driver.findElement(By.id("inputUsername")).sendKeys("rahul"); //username
+        driver.findElement(By.name("inputPassword")).sendKeys("rahul123"); //pass
+        driver.findElement(By.className("signInBtn")).click(); //button
+        System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
     }
 }
