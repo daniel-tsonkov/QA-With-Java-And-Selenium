@@ -16,6 +16,9 @@ public class locators {
         driver.findElement(By.name("inputPassword")).sendKeys("rahul123"); //pass
         driver.findElement(By.className("signInBtn")).click(); //button
         System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
-        driver.findElement(By.linkText("Forgot your password?")).click();
+        driver.findElement(By.linkText("Forgot your password?")).click(); //open text link
+        driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Dan"); //enter text in form
+        driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("dan@abv.bg");
+        driver.findElement(By.cssSelector("input[placeholder='Email']")).clear();
     }
 }
