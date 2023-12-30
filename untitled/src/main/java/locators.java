@@ -30,7 +30,7 @@ public class locators {
         driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();
         Thread.sleep(1000); //wait for stabilize single page application
 
-        driver.findElement(By.cssSelector("#inputUsername")).sendKeys("rahul");
+        driver.findElement(By.cssSelector("#inputUsername")).sendKeys("Dan");
         driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
         driver.findElement(By.id("chkboxOne")).click();
         driver.findElement(By.xpath("//button[contains(@class, 'submit')]")).click();
