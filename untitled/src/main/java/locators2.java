@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 public class locators2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "/home/a1/Documents/chromedriver-linux64/chromedriver"); //for linux
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\dan\\Documents\\chromedriver-win64\\chromedriver.exe"); //for windows
         WebDriver driver = new ChromeDriver();
@@ -16,7 +16,7 @@ public class locators2 {
         driver.findElement(By.id("inputUsername")).sendKeys("rahul"); //username
         driver.findElement(By.name("inputPassword")).sendKeys("rahulshettyacademy"); //pass
         driver.findElement(By.className("signInBtn")).click(); //button
-
+        Thread.sleep(1000);
 
         System.out.println(driver.findElement(By.tagName("p")).getText());
         Assert.assertEquals(driver.findElement(By.tagName("p")).getText(), "You are successfully logged in.");
