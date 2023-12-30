@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class locators {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "/home/a1/Documents/chromedriver-linux64/chromedriver"); //for linux
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\dan\\Documents\\chromedriver-win64\\chromedriver.exe"); //for windows
         WebDriver driver = new ChromeDriver();
@@ -17,11 +17,13 @@ public class locators {
         driver.findElement(By.className("signInBtn")).click(); //button
         System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
         driver.findElement(By.linkText("Forgot your password?")).click(); //open text link
+        Thread.sleep(1000);
         driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Dan"); //enter text in form
         driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("dan@abv.bg");
         //driver.findElement(By.cssSelector("input[placeholder='Email']")).clear();
         driver.findElement(By.xpath("//form/input[3]")).sendKeys("12345"); //telephone
         driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
         System.out.println(driver.findElement(By.cssSelector("form p")).getText());
+
     }
 }
