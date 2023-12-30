@@ -25,5 +25,6 @@ public class locators {
         driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
         System.out.println(driver.findElement(By.cssSelector("form p")).getText());
         driver.findElement(By.cssSelector("#inputUsername")).sendKeys("rahul");
+        driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
     }
 }
