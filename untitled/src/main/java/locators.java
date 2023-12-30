@@ -15,6 +15,7 @@ public class locators {
         driver.findElement(By.id("inputUsername")).sendKeys("rahul"); //username
         driver.findElement(By.name("inputPassword")).sendKeys("rahul123"); //pass
         driver.findElement(By.className("signInBtn")).click(); //button
+
         System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
         driver.findElement(By.linkText("Forgot your password?")).click(); //open text link
         Thread.sleep(1000); //wait for stabilize single page application
