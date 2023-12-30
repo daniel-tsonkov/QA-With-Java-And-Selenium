@@ -1,8 +1,9 @@
+import java.time.Duration;
+//import dev.failsafe.internal.util.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.time.Duration;
+import org.testng.Assert;
 
 public class locators2 {
     public static void main(String[] args) {
@@ -13,7 +14,12 @@ public class locators2 {
 
         driver.get("https://rahulshettyacademy.com/locatorspractice/");
         driver.findElement(By.id("inputUsername")).sendKeys("rahul"); //username
-        driver.findElement(By.name("inputPassword")).sendKeys("rahul123"); //pass
+        driver.findElement(By.name("inputPassword")).sendKeys("rahulshettyacademy"); //pass
         driver.findElement(By.className("signInBtn")).click(); //button
+
+
+        System.out.println(driver.findElement(By.tagName("p")).getText());
+        Assert.assertEquals(driver.findElement(By.tagName("p")).getText(), "You are successfully logged in.");
+
     }
 }
