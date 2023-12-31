@@ -26,4 +26,10 @@ public class locators2 {
         driver.findElement(By.xpath("//*[text()='Log Out']")).click();
         driver.close();
     }
+
+    public void getPassword(WebDriver driver) throws InterruptedException {
+        driver.get("https://rahulshettyacademy.com/locatorspractice/");
+        driver.findElement(By.linkText("Forgot your password?")).click(); //open text link
+        Thread.sleep(1000);
+    }
 }
