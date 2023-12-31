@@ -12,9 +12,9 @@ public class locators2 {
         System.setProperty("webdriver.chrome.driver", "/home/a1/Documents/chromedriver-linux64/chromedriver"); //for linux
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\dan\\Documents\\chromedriver-win64\\chromedriver.exe"); //for windows
         WebDriver driver = new ChromeDriver();
-        System.setProperty("webdriver.gecko.driver", "/home/a1/Documents/geckodriver-linux/geckodriver"); //for linux
+        //System.setProperty("webdriver.gecko.driver", "/home/a1/Documents/geckodriver-linux/geckodriver"); //for linux
         //System.setProperty("webdriver.gecko.driver", "C:\\Users\\dan\\Documents\\chromedriver-win64\\chromedriver.exe"); //for windows
-        WebDriver driver1 = new FirefoxDriver();
+        //WebDriver driver = new FirefoxDriver();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); //wait 5 seconds after that report for error(no such element)
 
