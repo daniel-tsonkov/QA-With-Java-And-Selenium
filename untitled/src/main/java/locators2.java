@@ -13,9 +13,11 @@ public class locators2 {
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); //wait 5 seconds after that report for error(no such element)
 
+        String password = getPassword(driver);
+
         driver.get("https://rahulshettyacademy.com/locatorspractice/");
         driver.findElement(By.id("inputUsername")).sendKeys(name); //username
-        driver.findElement(By.name("inputPassword")).sendKeys("rahulshettyacademy"); //pass
+        driver.findElement(By.name("inputPassword")).sendKeys(password); //pass "rahulshettyacademy"
         driver.findElement(By.className("signInBtn")).click(); //button
         Thread.sleep(1000);
 
@@ -27,7 +29,7 @@ public class locators2 {
         driver.close();
     }
 
-    public void getPassword(WebDriver driver) throws InterruptedException {
+    public static String getPassword(WebDriver driver) throws InterruptedException {
         driver.get("https://rahulshettyacademy.com/locatorspractice/");
         driver.findElement(By.linkText("Forgot your password?")).click(); //open text link
         Thread.sleep(1000);
@@ -36,6 +38,6 @@ public class locators2 {
         String passwordText = driver.findElement(By.cssSelector("form p")).getText();
         String[] passwordArray = passwordText.split("'");
         String password = passwordArray[1].split("'")[0];
-
+        return password;
     }
 }
