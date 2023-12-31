@@ -37,7 +37,6 @@ public class locators2 {
         driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
         String passwordText = driver.findElement(By.cssSelector("form p")).getText();
         String[] passwordArray = passwordText.split("'");
-        String password = passwordArray[1].split("'")[0];
-        return password;
+        return passwordArray[1].split("'")[0];
     }
 }
