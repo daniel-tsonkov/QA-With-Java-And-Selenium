@@ -31,5 +31,11 @@ public class locators2 {
         driver.get("https://rahulshettyacademy.com/locatorspractice/");
         driver.findElement(By.linkText("Forgot your password?")).click(); //open text link
         Thread.sleep(1000);
+
+        driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
+        String passwordText = driver.findElement(By.cssSelector("form p")).getText();
+        String[] passwordArray = passwordText.split("'");
+        String password = passwordArray[1].split("'")[0];
+
     }
 }
