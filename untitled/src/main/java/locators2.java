@@ -24,7 +24,7 @@ public class locators2 {
         driver.findElement(By.id("inputUsername")).sendKeys(name); //username
         driver.findElement(By.name("inputPassword")).sendKeys(password); //pass "rahulshettyacademy"
         driver.findElement(By.className("signInBtn")).click(); //button
-        Thread.sleep(1000);
+        Thread.sleep(1100);
 
         System.out.println(driver.findElement(By.tagName("p")).getText());
         Assert.assertEquals(driver.findElement(By.tagName("p")).getText(), "You are successfully logged in.");
