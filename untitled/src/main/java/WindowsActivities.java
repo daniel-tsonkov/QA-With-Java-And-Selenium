@@ -7,6 +7,6 @@ public class WindowsActivities {
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\dan\\Documents\\chromedriver-win64\\chromedriver.exe"); //for windows
         WebDriver driver = new ChromeDriver();
 
-
+        driver.manage().window().maximize(); //run window in maximize mode
     }
 }
