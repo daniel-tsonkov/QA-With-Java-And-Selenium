@@ -8,5 +8,8 @@ public class WindowsActivities {
         WebDriver driver = new ChromeDriver();
 
         driver.manage().window().maximize(); //run window in maximize mode
+
+        driver.get("http://google.com");
+        driver.navigate().to("http://facebook.com"); //navigate to another website
     }
 }
