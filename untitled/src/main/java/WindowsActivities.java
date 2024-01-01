@@ -11,5 +11,7 @@ public class WindowsActivities {
 
         driver.get("http://google.com");
         driver.navigate().to("http://facebook.com"); //navigate to another website
+        driver.navigate().back();
+        driver.navigate().forward();
     }
 }
