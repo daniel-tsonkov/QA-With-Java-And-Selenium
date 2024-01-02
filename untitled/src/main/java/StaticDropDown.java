@@ -12,5 +12,6 @@ public class StaticDropDown {
 
         WebElement staticDropdown = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
         Select dropdown = new Select(staticDropdown);
+        dropdown.selectByIndex(3); //select 3th element from dropdown menu
     }
 }
