@@ -10,8 +10,10 @@ public class UpdatedDropdown {
 
         driver.findElement(By.id("divpaxinfo")).click();
         Thread.sleep(2000);
-        driver.findElement(By.id("hrefIncAdt")).click();
-        driver.findElement(By.id("hrefIncAdt")).click();
+
+        for (int i = 0; i < 5; i++) {
+            driver.findElement(By.id("hrefIncAdt")).click();
+        }
         driver.findElement(By.id("btnclosepaxoption")).click();
     }
 }
