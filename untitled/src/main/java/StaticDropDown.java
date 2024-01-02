@@ -16,5 +16,7 @@ public class StaticDropDown {
         System.out.println(dropdown.getFirstSelectedOption().getText()); //get text from selected option
         dropdown.selectByVisibleText("AED"); //another way to select
         System.out.println(dropdown.getFirstSelectedOption().getText()); //get text from selected option
+        dropdown.selectByValue("INR"); //another way to select
+        System.out.println(dropdown.getFirstSelectedOption().getText()); //get text from selected option
     }
 }
