@@ -12,7 +12,7 @@ public class AutoSuggestive {
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
         driver.findElement(By.id("autosuggest")).sendKeys("ind");
-        Thread.sleep(3000);
+        Thread.sleep(1000);
 
         List<WebElement> options = driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));
 
@@ -20,6 +20,7 @@ public class AutoSuggestive {
             //System.out.println(option.getText());
             if (option.getText().equals("India")) {
                 option.click();
+                break;
             }
         }
     }
