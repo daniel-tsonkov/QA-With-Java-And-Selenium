@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -7,6 +8,8 @@ public class Dropdown {
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
-
+        //a[@value='BLR']
+        //a[@value='MAA']
+        driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
     }
 }
