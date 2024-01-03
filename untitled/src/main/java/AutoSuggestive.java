@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -7,6 +8,6 @@ public class AutoSuggestive {
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
-
+        driver.findElement(By.id("autosuggest")).sendKeys("ind");
     }
 }
