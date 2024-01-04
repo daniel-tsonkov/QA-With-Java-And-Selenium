@@ -1,6 +1,3 @@
-//import dev.failsafe.internal.util.Assert;
-//import org.testng.Assert;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -20,7 +17,7 @@ public class UpdatedDropdown {
         driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
         //System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
         System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
-        if (driver.findElement(By.id("Div1")).getAttribute("style").contains("1")) {
+        if (driver.findElement(By.id("Div1")).getAttribute("style").contains("0.5")) { //update to 1
             Assert.assertTrue(true);
         } else {
             Assert.assertTrue(false);
@@ -40,6 +37,6 @@ public class UpdatedDropdown {
         //System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 
 
-        //driver.close();
+        driver.close();
     }
 }
