@@ -11,15 +11,15 @@ public class UpdatedDropdown {
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
-        System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount'")).isSelected());
+        //System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount'")).isSelected());
         driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount'")).click(); //lection No60
-        System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount'")).isSelected());
+        //System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount'")).isSelected());
 
         System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
         driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
         System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
 
-        System.out.println(driver.findElements(By.cssSelector("input[type='checkbox'")).size());
+        //System.out.println(driver.findElements(By.cssSelector("input[type='checkbox'")).size());
 
         driver.findElement(By.id("divpaxinfo")).click();
         Thread.sleep(2000);
@@ -30,9 +30,9 @@ public class UpdatedDropdown {
 
         driver.findElement(By.id("btnclosepaxoption")).click();
         Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(), "5 Adult");
-        System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
+        //System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 
 
-        driver.close();
+        //driver.close();
     }
 }
