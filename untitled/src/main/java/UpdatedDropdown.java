@@ -8,7 +8,11 @@ public class UpdatedDropdown {
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
+        System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount'")).isSelected());
         driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount'")).click(); //lection No60
+        System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount'")).isSelected());
+
+        System.out.println(driver.findElements(By.cssSelector("input[type='checkbox'")).size());
 
         driver.findElement(By.id("divpaxinfo")).click();
         Thread.sleep(2000);
