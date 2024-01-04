@@ -18,7 +18,7 @@ public class Dropdown {
         driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
 
         //ui-state-default.ui-state-highlight
-        driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click();
+        driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click(); //select from calendar current date
 
         driver.close();
     }
