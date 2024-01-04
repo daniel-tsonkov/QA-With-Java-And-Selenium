@@ -15,6 +15,10 @@ public class UpdatedDropdown {
         driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount'")).click(); //lection No60
         System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount'")).isSelected());
 
+        System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
+        driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
+        System.out.println(driver.findElement(By.name("ctl00$mainContent$view_date2")).isEnabled());
+
         System.out.println(driver.findElements(By.cssSelector("input[type='checkbox'")).size());
 
         driver.findElement(By.id("divpaxinfo")).click();
@@ -27,6 +31,7 @@ public class UpdatedDropdown {
         driver.findElement(By.id("btnclosepaxoption")).click();
         Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(), "5 Adult");
         System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
+
 
         driver.close();
     }
