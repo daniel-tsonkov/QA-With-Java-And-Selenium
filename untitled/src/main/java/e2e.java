@@ -31,7 +31,10 @@ public class e2e {
         Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(), "5 Adult");
         System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 
-        driver.findElement(By.cssSelector("#ctl00_mainContent_btn_FindFlights")).click(); //using id as cssSelector
+        //driver.findElement(By.cssSelector("#ctl00_mainContent_btn_FindFlights")).click(); //using id as cssSelector
+        //driver.findElement(By.cssSelector("input[value='Search']")).click(); //second way
+        //driver.findElement(By.xpath("//input[@value='Search']")).click(); //third way
+        driver.findElement(By.name("ctl00$mainContent$btn_FindFlights")).click(); //fourth way
 
         //driver.close();
     }
