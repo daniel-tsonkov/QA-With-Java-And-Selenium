@@ -18,10 +18,10 @@ public class e2e {
 
         driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click(); //select from calendar current date
 
-        if (driver.findElement(By.id("Div1")).getAttribute("style").contains("1")) { //update to 1
-            Assert.assertTrue(false);
-        } else {
+        if (driver.findElement(By.id("Div1")).getAttribute("style").contains("0.5")) { //update to 1
             Assert.assertTrue(true);
+        } else {
+            Assert.assertTrue(false);
         }
 
         driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount'")).click(); //lection No60
