@@ -9,6 +9,8 @@ public class e2e {
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
+        driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_0")).click();
+
         driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
         driver.findElement(By.xpath("//a[@value='DEL']")).click();
         Thread.sleep(1000);
