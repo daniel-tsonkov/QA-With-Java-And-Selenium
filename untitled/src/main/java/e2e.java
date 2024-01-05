@@ -20,5 +20,19 @@ public class e2e {
         } else {
             Assert.assertTrue(false);
         }
+
+        driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount'")).click(); //lection No60
+
+        for (int i = 1; i < 5; i++) {
+            driver.findElement(By.id("hrefIncAdt")).click();
+        }
+
+        driver.findElement(By.id("btnclosepaxoption")).click();
+        Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(), "5 Adult");
+        System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
+
+        driver.findElement(By.cssSelector("#ctl00_mainContent_btn_FindFlights")).click(); //using id as cssSelector
+
+        //driver.close();
     }
 }
