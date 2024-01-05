@@ -9,7 +9,7 @@ public class e2e {
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 
-        driver.findElement(By.xpath("//a[@value='DLE']")).click();
+        driver.findElement(By.xpath("//a[@value='DEL']")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
 
