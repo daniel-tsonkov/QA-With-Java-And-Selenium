@@ -10,5 +10,6 @@ public class Assigment {
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 
         driver.findElement(By.id("name")).sendKeys(text);
+        driver.findElement(By.id("alertbtn")).click(); //cssSelector - "[id='alertbtn']"
     }
 }
