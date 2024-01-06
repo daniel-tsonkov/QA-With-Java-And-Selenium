@@ -5,7 +5,7 @@ public class Assigment {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize(); //run window in maximize mode
-        driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+        driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 
 
     }
