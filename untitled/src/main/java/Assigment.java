@@ -12,8 +12,14 @@ public class Assigment {
         driver.findElement(By.id("name")).sendKeys(text);
         driver.findElement(By.id("alertbtn")).click(); //cssSelector - "[id='alertbtn']"
 
-        System.out.println(driver.switchTo().alert().getText());
+        System.out.println(driver.switchTo().alert().getText()); //get text from alert POPUP
         driver.switchTo().alert().accept(); //when work with POPUP
+
+        driver.findElement(By.id("name")).sendKeys(text);
+        driver.findElement(By.id("confirmbtn")).click(); //cssSelector - "[id='alertbtn']"
+
+        System.out.println(driver.switchTo().alert().getText()); //get text from alert POPUP
+        driver.switchTo().alert().dismiss(); //when work with POPUP
 
         driver.close();
     }
