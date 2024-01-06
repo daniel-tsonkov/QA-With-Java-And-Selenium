@@ -11,5 +11,6 @@ public class Assigment {
 
         driver.findElement(By.id("name")).sendKeys(text);
         driver.findElement(By.id("alertbtn")).click(); //cssSelector - "[id='alertbtn']"
+        driver.switchTo().alert().accept(); //when work with POPUP
     }
 }
