@@ -3,6 +3,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class base {
@@ -11,7 +13,7 @@ public class base {
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 
-        String [] vegies = {"Cucumber", "Brocolli"};
+        String[] itemsNeeded = {"Cucumber", "Brocolli"};
 
         List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
 
@@ -21,7 +23,9 @@ public class base {
             //String name = products.getText();
             String name = products.get(i).getText();
 
-            if (name.contains("Brocolli")) {
+            List<String> itemsNeededList = Arrays.asList(itemsNeeded);
+
+            if (itemsNeededList.contains(name)) {
                 driver.findElements(By.xpath("//button[text()='ADD TO CART']")).get(i).click();
                 break;
             }
