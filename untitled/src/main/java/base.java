@@ -23,7 +23,7 @@ public class base {
             //String name = products.getText();
             String name = products.get(i).getText();
 
-            List<String> itemsNeededList = Arrays.asList(itemsNeeded); //array to listArray
+            List<String> itemsNeededList = Arrays.asList(itemsNeeded); //array to listArrays
 
             if (itemsNeededList.contains(name)) {
                 driver.findElements(By.xpath("//button[text()='ADD TO CART']")).get(i).click();
