@@ -13,7 +13,7 @@ public class base {
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 
-        String[] itemsNeeded = {"Cucumber", "Brocolli", "Beetroot"};
+        String[] itemsNeeded = {"Cucumber", "Brocolli", "Beetroot", "Beans", "Apple"}; //add more items
 
         List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
 
