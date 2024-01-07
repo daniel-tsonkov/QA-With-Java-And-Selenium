@@ -13,7 +13,7 @@ public class base {
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 
-        String[] itemsNeeded = {"Cucumber", "Brocolli"};
+        String[] itemsNeeded = {"Cucumber", "Brocolli", "Beetroot"};
 
         List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
 
@@ -23,11 +23,10 @@ public class base {
             //String name = products.getText();
             String name = products.get(i).getText();
 
-            List<String> itemsNeededList = Arrays.asList(itemsNeeded);
+            List<String> itemsNeededList = Arrays.asList(itemsNeeded); //array to listArray
 
             if (itemsNeededList.contains(name)) {
                 driver.findElements(By.xpath("//button[text()='ADD TO CART']")).get(i).click();
-                break;
             }
         }
 
