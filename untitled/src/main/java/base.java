@@ -19,8 +19,9 @@ public class base {
             //String name = products.getText();
             String name = products.get(i).getText();
 
-            if (name.contains("Cucumber")) {
+            if (name.contains("Brocolli")) {
                 driver.findElements(By.xpath("//button[text()='ADD TO CART']")).get(i).click();
+                break;
             }
         }
 
