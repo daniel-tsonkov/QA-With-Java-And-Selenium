@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -12,7 +13,7 @@ public class base {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
-        driver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS); //implicity wait
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000)); //setScriptTimeout(1000, TimeUnit.MILLISECONDS); //implicity wait setScriptTimeout is debrecated
 
         String[] itemsNeeded = {"Brocolli", "Cucumber", "Beetroot", "Tomato"}; //add more items
 
