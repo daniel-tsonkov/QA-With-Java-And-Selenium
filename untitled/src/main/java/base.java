@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class base {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
@@ -20,6 +20,8 @@ public class base {
         for (int i = 0; i < products.size(); i++) {
             String[] name = products.get(i).getText().split("-");
             String formattedName = name[0].trim();
+
+            Thread.sleep(3500);
 
             List<String> itemsNeededList = Arrays.asList(itemsNeeded); //array to listArrays
 
