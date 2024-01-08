@@ -21,14 +21,14 @@ public class base {
             String[] name = products.get(i).getText().split("-");
             String formattedName = name[0].trim();
 
-            Thread.sleep(3500);
+            //Thread.sleep(3500);
 
             List<String> itemsNeededList = Arrays.asList(itemsNeeded); //array to listArrays
 
 
             if (itemsNeededList.contains(formattedName)) {
                 j++;
-                driver.findElements(By.xpath("//button[text()='ADD TO CART']")).get(i).click();
+                driver.findElements(By.xpath("//div[@class='product-action']")).get(i).click();
 
                 if (j == itemsNeeded.length) {
                     break;
