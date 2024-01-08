@@ -11,10 +11,14 @@ public class base {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
-        int j = 0;
 
         String[] itemsNeeded = {"Brocolli", "Cucumber", "Beetroot", "Tomato"}; //add more items
 
+        addItems(driver, itemsNeeded);
+    }
+
+    public static void addItems(WebDriver driver, String[] itemsNeeded)  {
+        int j = 0;
         List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
 
         for (int i = 0; i < products.size(); i++) {
@@ -32,7 +36,5 @@ public class base {
                 }
             }
         }
-
-        //driver.close();
     }
 }
