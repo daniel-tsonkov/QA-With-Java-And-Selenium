@@ -21,7 +21,8 @@ public class base {
         for (int i = 0; i < products.size(); i++) {
             //System.out.println(product.getText());
             //String name = products.getText();
-            String name = products.get(i).getText();
+            String[] name = products.get(i).getText().split(" - ");
+            System.out.println(name[0]);
 
             List<String> itemsNeededList = Arrays.asList(itemsNeeded); //array to listArrays
 
