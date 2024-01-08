@@ -13,7 +13,7 @@ public class base {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000)); //setScriptTimeout(1000, TimeUnit.MILLISECONDS); //implicity wait setScriptTimeout is debrecated
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000)); //setScriptTimeout(1000, TimeUnit.MILLISECONDS); //implicity wait setScriptTimeout is debrecated
 
         String[] itemsNeeded = {"Brocolli", "Cucumber", "Beetroot", "Tomato"}; //add more items
 
@@ -24,6 +24,8 @@ public class base {
 
         //Thread.sleep(2000);
         driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
+        driver.findElement(By.cssSelector("button.promoBtn")).click();
+        System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
     }
 
     public static void addItems(WebDriver driver, String[] itemsNeeded)  {
