@@ -3,7 +3,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -12,6 +11,7 @@ public class base {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+        int j = 0;
 
         String[] itemsNeeded = {"Brocolli", "Cucumber", "Beetroot"}; //add more items
 
@@ -20,12 +20,17 @@ public class base {
         for (int i = 0; i < products.size(); i++) {
             String[] name = products.get(i).getText().split("-");
             String formattedName = name[0].trim();
-            System.out.println(name[0]);
 
             List<String> itemsNeededList = Arrays.asList(itemsNeeded); //array to listArrays
 
+
             if (itemsNeededList.contains(formattedName)) {
+                j++;
                 driver.findElements(By.xpath("//button[text()='ADD TO CART']")).get(i).click();
+
+                if (j == itemsNeeded.length) {
+                    break;
+                }
             }
         }
 
