@@ -15,6 +15,9 @@ public class base {
         String[] itemsNeeded = {"Brocolli", "Cucumber", "Beetroot", "Tomato"}; //add more items
 
         addItems(driver, itemsNeeded);
+
+        driver.findElement(By.cssSelector("img[alt='Cart']")).click();
+        driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
     }
 
     public static void addItems(WebDriver driver, String[] itemsNeeded)  {
