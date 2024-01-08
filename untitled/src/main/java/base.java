@@ -13,7 +13,7 @@ public class base {
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
         int j = 0;
 
-        String[] itemsNeeded = {"Brocolli", "Cucumber", "Beetroot"}; //add more items
+        String[] itemsNeeded = {"Brocolli", "Cucumber", "Beetroot", "Tomato"}; //add more items
 
         List<WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
 
@@ -21,14 +21,11 @@ public class base {
             String[] name = products.get(i).getText().split("-");
             String formattedName = name[0].trim();
 
-            //Thread.sleep(3500);
-
             List<String> itemsNeededList = Arrays.asList(itemsNeeded); //array to listArrays
-
 
             if (itemsNeededList.contains(formattedName)) {
                 j++;
-                driver.findElements(By.xpath("//div[@class='product-action']")).get(i).click();
+                driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
 
                 if (j == itemsNeeded.length) {
                     break;
