@@ -17,7 +17,10 @@ public class base {
         addItems(driver, itemsNeeded);
 
         driver.findElement(By.cssSelector("img[alt='Cart']")).click();
-        driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
+        driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click(); //process to check
+
+        //Thread.sleep(2000);
+        driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
     }
 
     public static void addItems(WebDriver driver, String[] itemsNeeded)  {
