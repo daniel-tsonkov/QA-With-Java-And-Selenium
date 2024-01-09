@@ -25,6 +25,7 @@ public class base {
         //Thread.sleep(2000);
         driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
         driver.findElement(By.cssSelector("button.promoBtn")).click();
+        //explicite wait
         System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
     }
 
