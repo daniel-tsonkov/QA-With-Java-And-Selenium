@@ -2,6 +2,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -27,6 +29,8 @@ public class base {
         driver.findElement(By.cssSelector("button.promoBtn")).click();
         //explicite wait
         WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5)); //after on Selenium 4.xx
+        w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
+
         System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
     }
 
