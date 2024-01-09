@@ -15,7 +15,7 @@ public class base {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000)); //setScriptTimeout(1000, TimeUnit.MILLISECONDS); //implicity wait setScriptTimeout is debrecated
+        //driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000)); //setScriptTimeout(1000, TimeUnit.MILLISECONDS); //implicity wait setScriptTimeout is debrecated
         WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5)); //after on Selenium 4.xx
 
         String[] itemsNeeded = {"Brocolli", "Cucumber", "Beetroot", "Tomato"}; //add more items
