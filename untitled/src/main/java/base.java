@@ -16,6 +16,7 @@ public class base {
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000)); //setScriptTimeout(1000, TimeUnit.MILLISECONDS); //implicity wait setScriptTimeout is debrecated
+        WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5)); //after on Selenium 4.xx
 
         String[] itemsNeeded = {"Brocolli", "Cucumber", "Beetroot", "Tomato"}; //add more items
 
@@ -23,12 +24,12 @@ public class base {
 
         driver.findElement(By.cssSelector("img[alt='Cart']")).click();
         driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click(); //process to check
+        w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.promoCode")));
 
         //Thread.sleep(2000);
         driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
         driver.findElement(By.cssSelector("button.promoBtn")).click();
         //explicite wait
-        WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5)); //after on Selenium 4.xx
         w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
 
         System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
