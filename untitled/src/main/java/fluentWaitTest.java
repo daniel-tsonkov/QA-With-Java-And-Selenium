@@ -26,5 +26,6 @@ public class fluentWaitTest {
                 return driver.findElement(By.cssSelector("[id='finish'] h4"));
             }
         });
+        System.out.println(driver.findElement(By.cssSelector("[id='finish'] h4")).isDisplayed());
     }
 }
