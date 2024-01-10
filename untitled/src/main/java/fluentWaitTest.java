@@ -30,6 +30,9 @@ public class fluentWaitTest {
                 }
             }
         });
-        System.out.println(driver.findElement(By.cssSelector("[id='finish'] h4")).isDisplayed());
+        System.out.println(driver.findElement(By.cssSelector("[id='finish'] h4")).getText());
+
+        driver.close();
+        System.exit(0);
     }
 }
