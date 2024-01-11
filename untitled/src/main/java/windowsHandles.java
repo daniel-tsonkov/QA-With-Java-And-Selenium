@@ -3,6 +3,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.util.Iterator;
+import java.util.Set;
 
 public class windowsHandles {
     public static void main(String[] args) {
@@ -12,7 +14,12 @@ public class windowsHandles {
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
         driver.findElement(By.cssSelector(".blinkingText")).click();
+        Set<String> windows = driver.getWindowHandles(); //get all windows ID
+        Iterator<String> it = windows.iterator();
+        String parendId = it.next(); //id is 0
+        String childId = it.next(); //id is 1
 
+        driver.switchTo().window(childId);
 
         System.exit(0);
     }
