@@ -1,4 +1,5 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,6 +15,9 @@ public class actionsDemo {
         Thread.sleep(20000);
         Actions a = new Actions(driver);
         WebElement move = driver.findElement(By.cssSelector("a[id='nav-link-accountList']")); //local variable
+        a.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("hello").build().perform();
+        //build() creat operation
+        //performe() execute operation
         a.moveToElement(move).build().perform();
     }
 }
