@@ -24,8 +24,11 @@ public class windowsHandles {
         //end switch window
 
         System.out.println(driver.findElement(By.cssSelector(".im-para.red")).getText());
-        String email = driver.findElement(By.cssSelector(".im-para.red")).getText().split("at ")[1].split(" ")[0];
-        System.out.println(email);
+        String emailId = driver.findElement(By.cssSelector(".im-para.red")).getText().split("at ")[1].split(" ")[0]; //get only email as text
+        System.out.println(emailId);
+
+        driver.switchTo().window(parendId);
+        driver.findElement(By.id("username")).sendKeys(emailId);
 
         System.exit(0);
     }
