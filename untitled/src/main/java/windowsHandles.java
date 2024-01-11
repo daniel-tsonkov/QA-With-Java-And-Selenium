@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -9,6 +10,8 @@ public class windowsHandles {
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/loginpagePractise/#");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
+
+        driver.findElement(By.cssSelector(".blinkingText")).click();
 
 
         System.exit(0);
