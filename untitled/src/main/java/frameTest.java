@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -10,6 +11,8 @@ public class frameTest {
         driver.get("https://jqueryui.com/droppable/");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
+        driver.findElement(By.id("draggable")).click();
 
+        System.exit(0);
     }
 }
