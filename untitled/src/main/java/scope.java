@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -9,5 +10,9 @@ public class scope {
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/AutomationPractice/"); // https://rahulshettyacademy.com/AutomationPractice/
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
+
+        System.out.println(driver.findElements((By.tagName("a"))).size());
+
+        System.exit(0);
     }
 }
