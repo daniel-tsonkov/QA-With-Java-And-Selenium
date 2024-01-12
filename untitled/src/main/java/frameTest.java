@@ -21,6 +21,9 @@ public class frameTest {
         WebElement target = driver.findElement(By.id("droppable"));
         action.dragAndDrop(source, target).build().perform();
 
+        driver.switchTo().defaultContent(); //switch back to main content frame
+        //driver.findElement(By.xpath("//input[@id='username']")).click();
+
         System.exit(0);
     }
 }
