@@ -12,13 +12,13 @@ public class frameTest {
         driver.get("https://jqueryui.com/droppable/");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
-        driver.switchTo().frame(driver.findElement(By.cssSelector("iframe.demo-frame")));
-        driver.findElement(By.id("draggable")).click();
+        //System.out.println(driver.findElements((By.tagName("iframe"))).size());
+        //driver.switchTo().frame(driver.findElement(By.cssSelector("iframe.demo-frame"))); //nee to switch to the frame
+        driver.switchTo().frame(0);
 
         Actions action = new Actions(driver);
         WebElement source = driver.findElement(By.id("draggable"));
         WebElement target = driver.findElement(By.id("droppable"));
-
         action.dragAndDrop(source, target).build().perform();
 
         System.exit(0);
