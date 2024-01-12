@@ -11,6 +11,7 @@ public class frameTest {
         driver.get("https://jqueryui.com/droppable/");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
+        driver.switchTo().frame(driver.findElement(By.cssSelector("iframe.demo-frame")));
         driver.findElement(By.id("draggable")).click();
 
         System.exit(0);
