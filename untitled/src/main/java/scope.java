@@ -17,7 +17,8 @@ public class scope {
         WebElement footerDriver = driver.findElement(By.id("gf-BIG")); // scope to a tagname  only in scope
         System.out.println(footerDriver.findElements((By.tagName("a"))).size()); // only in footer
 
-        footerDriver.findElement(By.xpath("//table/tbody/tr/td[1]/ul"));
+        WebElement coloumnDriver = footerDriver.findElement(By.xpath("//table/tbody/tr/td[1]/ul")); // web element limited to first column of footer
+        System.out.println(coloumnDriver.findElements((By.tagName("a"))).size()); // only in first coloum of footer
 
         System.exit(0);
     }
