@@ -22,7 +22,7 @@ public class scope {
 
         int countOfColoumnElements = coloumnDriver.findElements((By.tagName("a"))).size();
         for (int i = 1; i < countOfColoumnElements; i++) {
-
+            coloumnDriver.findElements((By.tagName("a"))).get(i).click();
         }
 
         System.exit(0);
