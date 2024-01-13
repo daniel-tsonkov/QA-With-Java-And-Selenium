@@ -1,4 +1,5 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,6 +23,7 @@ public class scope {
 
         int countOfColoumnElements = coloumnDriver.findElements((By.tagName("a"))).size();
         for (int i = 1; i < countOfColoumnElements; i++) {
+            String clickOnLink = Keys.chord(Keys.CONTROL, Keys.ENTER);
             coloumnDriver.findElements((By.tagName("a"))).get(i).click();
         }
 
