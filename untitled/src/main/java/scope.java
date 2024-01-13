@@ -5,10 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.util.Iterator;
 import java.util.Set;
 
 public class scope {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/AutomationPractice/"); // https://rahulshettyacademy.com/AutomationPractice/
@@ -23,14 +24,16 @@ public class scope {
         System.out.println(coloumnDriver.findElements((By.tagName("a"))).size()); // only in first coloum of footer
 
         int countOfColoumnElements = coloumnDriver.findElements((By.tagName("a"))).size();
+        Thread.sleep(5000);
         for (int i = 1; i < countOfColoumnElements; i++) {
             String clickOnLinkTab = Keys.chord(Keys.CONTROL, Keys.ENTER);
             coloumnDriver.findElements((By.tagName("a"))).get(i).sendKeys(clickOnLinkTab); //open link in new TAB
 
             Set<String> titlwWindows = driver.getWindowHandles();
+            Iterator<String> it = titlwWindows.iterator();
 
-            for (String titlwWindow : titlwWindows) {
-                driver.switchTo().window(titlwWindow);
+            while (it.hasNext()) {
+                driver.switchTo().window(it.next());
                 System.out.println(driver.getTitle());
             }
         }
