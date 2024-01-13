@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
-import java.util.Iterator;
 import java.util.Set;
 
 public class scope {
@@ -33,10 +32,9 @@ public class scope {
         }
 
         Set<String> titlwWindows = driver.getWindowHandles();
-        Iterator<String> it = titlwWindows.iterator();
 
-        while (it.hasNext()) {
-            driver.switchTo().window(it.next());
+        for (String titlwWindow : titlwWindows) {
+            driver.switchTo().window(titlwWindow);
             System.out.println(driver.getTitle());
         }
 
