@@ -20,6 +20,11 @@ public class scope {
         WebElement coloumnDriver = footerDriver.findElement(By.xpath("//table/tbody/tr/td[1]/ul")); // web element limited to first column of footer
         System.out.println(coloumnDriver.findElements((By.tagName("a"))).size()); // only in first coloum of footer
 
+        int countOfColoumnElements = coloumnDriver.findElements((By.tagName("a"))).size();
+        for (int i = 1; i < countOfColoumnElements; i++) {
+
+        }
+
         System.exit(0);
     }
 }
