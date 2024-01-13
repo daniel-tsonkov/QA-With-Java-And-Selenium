@@ -23,8 +23,8 @@ public class scope {
 
         int countOfColoumnElements = coloumnDriver.findElements((By.tagName("a"))).size();
         for (int i = 1; i < countOfColoumnElements; i++) {
-            String clickOnLink = Keys.chord(Keys.CONTROL, Keys.ENTER);
-            coloumnDriver.findElements((By.tagName("a"))).get(i).click();
+            String clickOnLinkTab = Keys.chord(Keys.CONTROL, Keys.ENTER);
+            coloumnDriver.findElements((By.tagName("a"))).get(i).sendKeys(clickOnLinkTab);
         }
 
         System.exit(0);
