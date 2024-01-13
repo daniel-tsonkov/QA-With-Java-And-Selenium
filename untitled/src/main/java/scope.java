@@ -24,18 +24,20 @@ public class scope {
         System.out.println(coloumnDriver.findElements((By.tagName("a"))).size()); // only in first coloum of footer
 
         int countOfColoumnElements = coloumnDriver.findElements((By.tagName("a"))).size();
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
         for (int i = 1; i < countOfColoumnElements; i++) {
             String clickOnLinkTab = Keys.chord(Keys.CONTROL, Keys.ENTER);
             coloumnDriver.findElements((By.tagName("a"))).get(i).sendKeys(clickOnLinkTab); //open link in new TAB
 
-            Set<String> titlwWindows = driver.getWindowHandles();
-            Iterator<String> it = titlwWindows.iterator();
 
-            while (it.hasNext()) {
-                driver.switchTo().window(it.next());
-                System.out.println(driver.getTitle());
-            }
+        }
+
+        Set<String> titlwWindows = driver.getWindowHandles();
+        Iterator<String> it = titlwWindows.iterator();
+
+        while (it.hasNext()) {
+            driver.switchTo().window(it.next());
+            System.out.println(driver.getTitle());
         }
 
         System.exit(0);
