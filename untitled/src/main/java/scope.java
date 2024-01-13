@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.util.Iterator;
+import java.util.Set;
 
 public class scope {
     public static void main(String[] args) {
@@ -25,6 +27,10 @@ public class scope {
         for (int i = 1; i < countOfColoumnElements; i++) {
             String clickOnLinkTab = Keys.chord(Keys.CONTROL, Keys.ENTER);
             coloumnDriver.findElements((By.tagName("a"))).get(i).sendKeys(clickOnLinkTab); //open link in new TAB
+
+            Set<String> titlwWindows = driver.getWindowHandles();
+            Iterator<String> it = titlwWindows.iterator();
+
         }
 
         System.exit(0);
