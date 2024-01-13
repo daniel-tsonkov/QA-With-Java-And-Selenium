@@ -30,7 +30,7 @@ public class scope {
 
 
         }
-
+        //open all the tabs
         Set<String> titlwWindows = driver.getWindowHandles();
 
         for (String titlwWindow : titlwWindows) {
