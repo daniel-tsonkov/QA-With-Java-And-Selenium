@@ -17,12 +17,17 @@ public class calendar {
 
         //driver.findElement(By.id("form-field-travel_comp_date")).click();
         driver.findElement(By.xpath(".//*[@id='form-field-travel_comp_date']")).click();
-        List<WebElement> dates = driver.findElements(By.name(".day"));
+        List<WebElement> dates = driver.findElements(By.className("day"));
 
-        int count = driver.findElements(By.name(".day")).size();
+        int count = driver.findElements(By.className("day")).size();
 
         for (int i = 0; i < count; i++) {
-            driver.findElements(By.className(".day")).get(i).getText();
+            String day = driver.findElements(By.className("day")).get(i).getText();
+
+            if (day.equalsIgnoreCase("23")) {
+                driver.findElements(By.className("day")).get(i).click();
+                break;
+            }
         }
 
         System.exit(0);
