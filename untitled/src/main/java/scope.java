@@ -27,8 +27,6 @@ public class scope {
         for (int i = 1; i < countOfColoumnElements; i++) {
             String clickOnLinkTab = Keys.chord(Keys.CONTROL, Keys.ENTER);
             coloumnDriver.findElements((By.tagName("a"))).get(i).sendKeys(clickOnLinkTab); //open link in new TAB
-
-
         }
         //open all the tabs
         Set<String> titlwWindows = driver.getWindowHandles();
