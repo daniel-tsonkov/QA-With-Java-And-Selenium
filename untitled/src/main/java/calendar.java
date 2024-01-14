@@ -22,6 +22,10 @@ public class calendar {
         Actions actions = new Actions(driver);
         actions.moveToElement(element).click().build().perform();
 
+        while (driver.findElement(By.cssSelector("[class='datepicker-days'] [class='datepicker-switch'] ")).getText().contains("April")) {
+
+        }
+
         List<WebElement> dates = driver.findElements(By.className("day"));
 
         int count = driver.findElements(By.className("day")).size();
