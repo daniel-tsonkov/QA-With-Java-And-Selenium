@@ -22,7 +22,7 @@ public class calendar {
         int count = driver.findElements(By.name(".day")).size();
 
         for (int i = 0; i < count; i++) {
-            
+            driver.findElements(By.className(".day")).get(i).getText();
         }
 
         System.exit(0);
