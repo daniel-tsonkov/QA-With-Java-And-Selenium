@@ -19,6 +19,12 @@ public class calendar {
         driver.findElement(By.xpath(".//*[@id='form-field-travel_comp_date']")).click();
         List<WebElement> dates = driver.findElements(By.name(".day"));
 
+        int count = driver.findElements(By.name(".day")).size();
+
+        for (int i = 0; i < count; i++) {
+            
+        }
+
         System.exit(0);
     }
 }
