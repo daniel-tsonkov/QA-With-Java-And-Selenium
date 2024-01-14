@@ -2,6 +2,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
@@ -14,7 +16,9 @@ public class calendar {
         driver.get("https://www.path2usa.com/travel-companions");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
-        Thread.sleep(10000);
+        //Thread.sleep(10000);
+        //WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofMillis(20000));
+        //wait2.until(ExpectedConditions.elementToBeClickable(By.xpath(".//*[@id='form-field-travel_comp_date']")));
 
         //driver.findElement(By.id("form-field-travel_comp_date")).click();
         driver.findElement(By.xpath(".//*[@id='form-field-travel_comp_date']")).click();
