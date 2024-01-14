@@ -4,7 +4,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
-import java.util.List;
 
 public class calendar {
     public static void main(String[] args) {
@@ -25,7 +24,7 @@ public class calendar {
             driver.findElement(By.cssSelector("[class='datepicker-day'] th[class='next']")).click();
         }
 
-        List<WebElement> dates = driver.findElements(By.className("day"));
+        //List<WebElement> dates = driver.findElements(By.className("day"));
 
         int count = driver.findElements(By.className("day")).size();
 
