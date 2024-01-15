@@ -3,6 +3,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import java.util.List;
 
@@ -24,9 +25,11 @@ public class javaScriptExecutor {
 
         System.out.println(sum);
 
-        int amout = Integer.parseInt(driver.findElement(By.cssSelector(".totalAmount")).getText().split(":")[1].trim());
+        int total = Integer.parseInt(driver.findElement(By.cssSelector(".totalAmount")).getText().split(":")[1].trim());
 
-        System.out.println(amout);
+        System.out.println(total);
+
+        Assert.assertEquals(sum, total);
 
         System.exit(0);
     }
