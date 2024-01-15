@@ -17,6 +17,12 @@ public class javaScriptExecutor {
         js.executeScript("document.querySelector('.tableFixHead').scrollTop=500"); //scroll one of the table from main window
         List<WebElement> values = driver.findElements(By.cssSelector(".tableFixHead td:nth-child(4)"));
 
+        int sum = 0;
+        for (int i = 0; i < values.size(); i++) {
+            sum += Integer.parseInt(values.get(i).getText());
+        }
+
+        System.out.println(sum);
 
         System.exit(0);
     }
