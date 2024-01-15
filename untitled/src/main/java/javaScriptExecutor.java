@@ -9,6 +9,7 @@ public class javaScriptExecutor {
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0, 450)"); //scroll 500px down
 
         System.exit(0);
     }
