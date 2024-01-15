@@ -18,8 +18,8 @@ public class javaScriptExecutor {
         List<WebElement> values = driver.findElements(By.cssSelector(".tableFixHead td:nth-child(4)"));
 
         int sum = 0;
-        for (int i = 0; i < values.size(); i++) {
-            sum += Integer.parseInt(values.get(i).getText());
+        for (WebElement value : values) {
+            sum += Integer.parseInt(value.getText());
         }
 
         System.out.println(sum);
