@@ -9,7 +9,9 @@ public class javaScriptExecutor {
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0, 450)"); //scroll 500px down
+        js.executeScript("window.scrollBy(0, 450)"); //scroll main window 500px down
+        js.executeScript("document.querySelector('.tableFixHead').scrollTop=500"); //scroll one of the table from main window
+
 
         System.exit(0);
     }
