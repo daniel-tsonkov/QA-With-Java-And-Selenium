@@ -24,6 +24,10 @@ public class javaScriptExecutor {
 
         System.out.println(sum);
 
+        int amout = Integer.parseInt(driver.findElement(By.cssSelector(".totalAmount")).getText().split(":")[1].trim());
+
+        System.out.println(amout);
+
         System.exit(0);
     }
 }
