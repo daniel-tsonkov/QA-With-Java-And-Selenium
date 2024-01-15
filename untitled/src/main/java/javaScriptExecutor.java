@@ -29,7 +29,7 @@ public class javaScriptExecutor {
 
         System.out.println(total);
 
-        Assert.assertEquals(sum, total);
+        Assert.assertEquals(sum, total); //if fail it will be troll exception
 
         System.exit(0);
     }
