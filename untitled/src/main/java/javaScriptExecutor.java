@@ -19,8 +19,9 @@ public class javaScriptExecutor {
         List<WebElement> values = driver.findElements(By.cssSelector(".tableFixHead td:nth-child(4)"));
 
         int sum = 0;
+
         for (WebElement value : values) {
-            sum += Integer.parseInt(value.getText());
+            sum += Integer.parseInt(value.getText()); //sum of all values from 4th column
         }
 
         System.out.println(sum);
