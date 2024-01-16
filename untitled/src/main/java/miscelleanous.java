@@ -18,7 +18,7 @@ public class miscelleanous {
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
         File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); //create screenshot on window
-        FileUtils.copyFile(src, new File("C:\\Users\\dan\\Pictures\\pic.png"));
+        FileUtils.copyFile(src, new File("C:\\Users\\dan\\Pictures\\pic.png")); //Don't put directly to C: (admin rools)
 
         System.exit(0);
     }
