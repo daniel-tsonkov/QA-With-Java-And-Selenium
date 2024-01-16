@@ -8,6 +8,7 @@ public class miscelleanous {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize(); //run window in maximize mode
         //driver.manage().window().fullscreen();
+        //driver.manage().deleteAllCookies(); //delete all cookie from browser
         driver.get("https://abv.bg/");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
