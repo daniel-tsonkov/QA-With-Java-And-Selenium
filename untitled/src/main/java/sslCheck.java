@@ -10,7 +10,7 @@ public class sslCheck {
         driver.get("https://expired.badssl.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
-
+        System.out.println(driver.getTitle());
 
         System.exit(0);
     }
