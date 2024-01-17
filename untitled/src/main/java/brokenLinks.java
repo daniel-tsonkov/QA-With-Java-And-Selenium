@@ -11,7 +11,8 @@ public class brokenLinks {
         driver.get("https://rahulshettyacademy.com/AutomationPractice");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
-        driver.findElement(By.cssSelector("a[href*='soapui']")).click();
+        String url = driver.findElement(By.cssSelector("a[href*='soapui']")).getAttribute("href");
+        System.out.println(url);
 
         System.exit(0);
     }
