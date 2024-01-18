@@ -14,7 +14,7 @@ public class brokenLinks {
         driver.get("https://rahulshettyacademy.com/AutomationPractice");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
-        String url = driver.findElement(By.cssSelector("a[href*='soapui']")).getAttribute("href");
+        String url = driver.findElement(By.cssSelector("a[href*='brokenlink']")).getAttribute("href");
         System.out.println(url);
 
         HttpURLConnection connection = (HttpURLConnection)new URL(url).openConnection();
