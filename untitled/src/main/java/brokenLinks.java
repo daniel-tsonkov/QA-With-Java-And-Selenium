@@ -22,6 +22,8 @@ public class brokenLinks {
         HttpURLConnection connection = (HttpURLConnection)new URL(url).openConnection();
         connection.setRequestMethod("HEAD");
         connection.connect();
+        int responseCode = connection.getResponseCode();
+        System.out.println(responseCode);
 
         System.exit(0);
     }
