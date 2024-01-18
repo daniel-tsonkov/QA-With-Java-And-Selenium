@@ -20,6 +20,8 @@ public class brokenLinks {
         System.out.println(url);
 
         HttpURLConnection connection = (HttpURLConnection)new URL(url).openConnection();
+        connection.setRequestMethod("HEAD");
+        connection.connect();
 
         System.exit(0);
     }
