@@ -29,9 +29,9 @@ public class brokenLinks {
             int responseCode = connection.getResponseCode();
             if (responseCode > 400) {
                 System.out.println("fail test " + link.getText());
+                System.out.println(responseCode);
                 Assert.assertTrue(false);
             }
-            System.out.println(responseCode);
         }
 
         /*String url = driver.findElement(By.cssSelector("a[href*='']")).getAttribute("href");
