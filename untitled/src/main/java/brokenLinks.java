@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -16,16 +17,31 @@ public class brokenLinks {
         driver.get("https://rahulshettyacademy.com/AutomationPractice");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
-        List<WebElement> link = driver.findElements(By.cssSelector("li[class='gf-li']a"));
+        List<WebElement> links = driver.findElements(By.cssSelector("li[class='gf-li'] a"));
 
-        String url = driver.findElement(By.cssSelector("a[href*='brokenlink']")).getAttribute("href");
+        for (WebElement link : links) {
+            String url = link.getAttribute("href");
+            System.out.println(url);
+
+            HttpURLConnection connection = (HttpURLConnection)new URL(url).openConnection();
+            connection.setRequestMethod("HEAD");
+            connection.connect();
+            int responseCode = connection.getResponseCode();
+            if (responseCode > 400) {
+                System.out.println("fail test " + link.getText());
+                Assert.assertTrue(false);
+            }
+            System.out.println(responseCode);
+        }
+
+        /*String url = driver.findElement(By.cssSelector("a[href*='']")).getAttribute("href");
         System.out.println(url);
 
         HttpURLConnection connection = (HttpURLConnection)new URL(url).openConnection();
         connection.setRequestMethod("HEAD");
         connection.connect();
         int responseCode = connection.getResponseCode();
-        System.out.println(responseCode);
+        System.out.println(responseCode);*/
 
         System.exit(0);
     }
