@@ -1,2 +1,2 @@
 # QA-With-Java-And-Selenium
-<p>UP</p>
+<p>Using lection on Rahul Shelly fro Udemy</p>
