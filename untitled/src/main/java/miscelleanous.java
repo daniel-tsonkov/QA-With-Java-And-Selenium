@@ -1,8 +1,9 @@
+//import jdk.javadoc.internal.doclets.toolkit.util.DocFile;
+//import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.apache.commons.io.FileUtils; // https://commons.apache.org/io/download_io.cgi downlload commons-io-2.15.1-src.zip
 
 import java.io.File;
 import java.io.IOException;
@@ -18,7 +19,7 @@ public class miscelleanous {
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
         File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); //create screenshot on window
-        FileUtils.copyFile(src, new File("C:\\Users\\dan\\Pictures\\pic.png")); //Don't put directly to C: (admin rools)
+        //FileUtils.copyFile(src, new File("C:\\Users\\dan\\Pictures\\pic.png")); //Don't put directly to C: (admin rools)
 
         System.exit(0);
     }
