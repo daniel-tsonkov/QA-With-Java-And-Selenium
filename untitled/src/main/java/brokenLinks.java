@@ -40,6 +40,8 @@ public class brokenLinks {
             }*/
         }
 
+        a.assertAll();
+
         /*String url = driver.findElement(By.cssSelector("a[href*='']")).getAttribute("href");
         System.out.println(url);
 
