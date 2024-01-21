@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -19,6 +20,7 @@ public class brokenLinks {
 
         List<WebElement> links = driver.findElements(By.cssSelector("li[class='gf-li'] a"));
         //SoftAssert assert = new  SoftAssert();
+        SoftAssert a = new SoftAssert();
 
         for (WebElement link : links) {
             String url = link.getAttribute("href");
@@ -27,8 +29,9 @@ public class brokenLinks {
             HttpURLConnection connection = (HttpURLConnection)new URL(url).openConnection();
             connection.setRequestMethod("HEAD");
             connection.connect();
+
             int responseCode = connection.getResponseCode();
-            Assert.assertTrue(responseCode > 400, "fail test " + link.getText()  + responseCode);
+            a.assertTrue(responseCode < 400, "fail test " + link.getText()  + responseCode);
 
             /*if (responseCode > 400) {
                 System.out.println("fail test " + link.getText());
