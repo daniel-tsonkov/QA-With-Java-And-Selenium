@@ -18,6 +18,7 @@ public class brokenLinks {
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
         List<WebElement> links = driver.findElements(By.cssSelector("li[class='gf-li'] a"));
+        //SoftAssert assert = new  SoftAssert();
 
         for (WebElement link : links) {
             String url = link.getAttribute("href");
@@ -27,11 +28,13 @@ public class brokenLinks {
             connection.setRequestMethod("HEAD");
             connection.connect();
             int responseCode = connection.getResponseCode();
-            if (responseCode > 400) {
+            Assert.assertTrue(responseCode > 400, "fail test " + link.getText()  + responseCode);
+
+            /*if (responseCode > 400) {
                 System.out.println("fail test " + link.getText());
                 System.out.println(responseCode);
-                Assert.assertTrue(false);
-            }
+                Assert.fail();
+            }*/
         }
 
         /*String url = driver.findElement(By.cssSelector("a[href*='']")).getAttribute("href");
