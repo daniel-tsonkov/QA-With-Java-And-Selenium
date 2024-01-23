@@ -6,17 +6,20 @@ import java.util.ArrayList;
 
 public class test1 {
     public static void main(String[] args) {
-        WebDriver driver = new ChromeDriver();
+        /*WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://jqueryui.com/droppable/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));*/
 
-        ArrayList<String> string = new ArrayList<>();
-        string.add("asd");
+        ArrayList<String> name = new ArrayList<>();
+        name.add("asd");
+        name.add("asdf");
+        name.add("zzzzz");
 
-        System.out.println(string.stream().filter(s -> s.startsWith("a")).count());
+        System.out.println(name.stream().filter(s -> s.startsWith("a")).count());
+        name.stream().filter(s -> s.length() > 4).limit(1).forEach(a -> System.out.println());
 
-        driver.close();
-        System.exit(0);
+        //driver.close();
+        //System.exit(0);
     }
 }
