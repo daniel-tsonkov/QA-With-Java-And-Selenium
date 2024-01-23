@@ -9,5 +9,6 @@ public class test1 {
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://jqueryui.com/droppable/");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
+
     }
 }
