@@ -14,10 +14,10 @@ public class test1 {
         ArrayList<String> name = new ArrayList<>();
         name.add("asd");
         name.add("asdf");
-        name.add("zzzzz");
+        name.add("zzzaaa");
 
         System.out.println(name.stream().filter(s -> s.startsWith("a")).count());
-        name.stream().filter(s -> s.length() > 4).limit(1).forEach(a -> System.out.println());
+        name.stream().filter(s -> s.length() > 4).limit(1).forEach(System.out::println);
 
         //driver.close();
         //System.exit(0);
