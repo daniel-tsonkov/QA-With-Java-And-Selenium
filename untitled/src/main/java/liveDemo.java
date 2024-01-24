@@ -19,15 +19,15 @@ public class liveDemo {
         List<WebElement> elementsList = driver.findElements(By.xpath("//tr/td[1]"));
         List<String> originalList = elementsList.stream().map(WebElement::getText).toList();
 
-        for (String element : originalList) {
+        /*for (String element : originalList) {
             System.out.println(element);
-        }
+        }*/
 
         List<String> sortedList = originalList.stream().sorted().toList();
 
-        for (String element : sortedList) {
+        /*for (String element : sortedList) {
             System.out.println(element);
-        }
+        }*/
 
         Assert.assertEquals(sortedList, originalList); //check if is sorted correctly
 
@@ -39,6 +39,6 @@ public class liveDemo {
     }
 
     private static String getPriceVeggies(WebElement element) {
-        return null;
+        return element.toString();
     }
 }
