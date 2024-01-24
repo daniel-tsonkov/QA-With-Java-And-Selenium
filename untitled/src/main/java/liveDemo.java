@@ -29,7 +29,9 @@ public class liveDemo {
             System.out.println(element);
         }
 
-        Assert.assertEquals(sortedList, originalList);
+        Assert.assertEquals(sortedList, originalList); //check if is sorted correctly
+
+
 
         System.exit(0);
     }
