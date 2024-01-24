@@ -31,12 +31,14 @@ public class liveDemo {
 
         Assert.assertEquals(sortedList, originalList); //check if is sorted correctly
 
-        elementsList.stream().filter(e -> e.getText().contains("Beans")).map(e -> getPriceVeggies()).toList();
+        List<String> price = elementsList.stream().filter(e -> e.getText().contains("Beans")).map(liveDemo::getPriceVeggies).toList();
+
+        System.out.println(price);
 
         System.exit(0);
     }
 
-    private static Object getPriceVeggies() {
+    private static String getPriceVeggies(WebElement element) {
         return null;
     }
 }
