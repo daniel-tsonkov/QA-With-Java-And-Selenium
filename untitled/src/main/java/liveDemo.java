@@ -19,6 +19,10 @@ public class liveDemo {
         List<WebElement> elementsList = driver.findElements(By.xpath("//tr/td[1]"));
         List<String> originalList = elementsList.stream().map(WebElement::getText).toList();
 
+        for (String element : originalList) {
+            System.out.println(element);
+        }
+
         System.exit(0);
     }
 }
