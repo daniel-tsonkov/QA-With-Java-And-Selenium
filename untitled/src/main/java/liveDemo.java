@@ -1,8 +1,10 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.util.List;
 
 public class liveDemo {
     public static void main(String[] args) {
@@ -13,6 +15,7 @@ public class liveDemo {
 
         //work with tables
         driver.findElement(By.xpath("//tr/th[1]")).click();
+        List<WebElement> elementsList = driver.findElements(By.xpath("//tr/td[1]"));
 
         System.exit(0);
     }
