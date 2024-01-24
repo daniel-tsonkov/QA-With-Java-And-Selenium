@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -11,7 +12,7 @@ public class liveDemo {
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
         //work with tables
-
+        driver.findElement(By.xpath("//tr/th[1]")).click();
 
         System.exit(0);
     }
