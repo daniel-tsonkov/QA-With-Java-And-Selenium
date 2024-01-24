@@ -33,13 +33,13 @@ public class liveDemo {
 
         List<String> price = elementsList.stream().filter(e -> e.getText().contains("Beans")).map(liveDemo::getPriceVeggies).toList();
 
-        System.out.println(price);
+        //System.out.println(price);
+        price.forEach(System.out::println);
 
         System.exit(0);
     }
 
-    private static String getPriceVeggies(WebElement element) {
-        String text = element.findElement(By.xpath("//tr/td[1]/following-sibling::td[1]")).getText();
-        return text;
+    private static String getPriceVeggies(WebElement e) {
+        return e.findElement(By.xpath("following-sibling::td[1]")).getText();
     }
 }
