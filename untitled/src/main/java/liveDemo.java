@@ -31,15 +31,16 @@ public class liveDemo {
 
         Assert.assertEquals(sortedList, originalList); //check if is sorted correctly
 
-        List<String> price = elementsList.stream().filter(e -> e.getText().contains("Beans")).map(liveDemo::getPriceVeggies).toList();
+        List<String> price = elementsList.stream().filter(e -> e.getText().contains("Beans")).map(e -> getPriceVeggies(e)).toList();
 
         //System.out.println(price);
-        price.forEach(System.out::println);
+        price.forEach(e -> System.out.println(e));
 
         System.exit(0);
     }
 
     private static String getPriceVeggies(WebElement e) {
-        return e.findElement(By.xpath("following-sibling::td[1]")).getText();
+        String priceValue = e.findElement(By.xpath("following-sibling::td[1]")).getText();
+        return priceValue;
     }
 }
