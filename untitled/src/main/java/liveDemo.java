@@ -39,6 +39,7 @@ public class liveDemo {
     }
 
     private static String getPriceVeggies(WebElement element) {
-        return element.toString();
+        String text = element.findElement(By.xpath("//tr/td[1]/following-sibling::td[1]")).getText();
+        return text;
     }
 }
