@@ -23,6 +23,12 @@ public class liveDemo {
             System.out.println(element);
         }
 
+        List<String> sortedList = originalList.stream().sorted().toList();
+
+        for (String element : sortedList) {
+            System.out.println(element);
+        }
+
         System.exit(0);
     }
 }
