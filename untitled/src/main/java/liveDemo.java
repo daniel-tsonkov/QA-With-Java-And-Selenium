@@ -31,7 +31,7 @@ public class liveDemo {
 
         Assert.assertEquals(sortedList, originalList); //check if is sorted correctly
 
-
+        elementsList.stream().map(e -> getPriceVeggies()).toList();
 
         System.exit(0);
     }
