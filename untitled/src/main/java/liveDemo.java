@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import java.time.Duration;
 import java.util.List;
@@ -27,6 +28,8 @@ public class liveDemo {
         for (String element : sortedList) {
             System.out.println(element);
         }
+
+        Assert.assertEquals(sortedList, originalList);
 
         System.exit(0);
     }
