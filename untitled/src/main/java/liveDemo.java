@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class liveDemo {
     public static void main(String[] args) {
@@ -16,6 +17,7 @@ public class liveDemo {
         //work with tables
         driver.findElement(By.xpath("//tr/th[1]")).click();
         List<WebElement> elementsList = driver.findElements(By.xpath("//tr/td[1]"));
+        List<String> originalList = elementsList.stream().map(WebElement::getText).toList();
 
         System.exit(0);
     }
