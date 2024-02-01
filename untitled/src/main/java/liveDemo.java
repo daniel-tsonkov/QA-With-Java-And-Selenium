@@ -49,7 +49,7 @@ public class liveDemo {
 
     private static String getPriceVeggies(WebElement e) {
         return e.findElement(By.xpath("following-sibling::td[1]")).getText();
-        /*
+        /* //replace
         String priceValue = e.findElement(By.xpath("following-sibling::td[1]")).getText();
         return priceValue;
          */
