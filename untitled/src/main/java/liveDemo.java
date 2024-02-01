@@ -30,8 +30,11 @@ public class liveDemo {
         }*/
 
         Assert.assertEquals(sortedList, originalList); //check if is sorted correctly
+
+        List<String> price;
         do {
-            List<String> price = elementsList.stream().filter(e -> e.getText().contains("Rice")).map(e -> getPriceVeggies(e)).toList();
+            List<WebElement> rows = driver.findElements(By.xpath("//tr/td[1]"));
+            price = rows.stream().filter(e -> e.getText().contains("Rice")).map(e -> getPriceVeggies(e)).toList();
 
             //System.out.println(price);
             price.forEach(e -> System.out.println(e));
