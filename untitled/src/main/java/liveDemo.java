@@ -36,6 +36,10 @@ public class liveDemo {
         //System.out.println(price);
         price.forEach(e -> System.out.println(e));
 
+        if(price.size() < 1) {
+            driver.findElement(By.cssSelector("[aria-label='Next']"));
+        }
+
         System.exit(0);
     }
 
