@@ -30,15 +30,16 @@ public class liveDemo {
         }*/
 
         Assert.assertEquals(sortedList, originalList); //check if is sorted correctly
+        do {
+            List<String> price = elementsList.stream().filter(e -> e.getText().contains("Rice")).map(e -> getPriceVeggies(e)).toList();
 
-        List<String> price = elementsList.stream().filter(e -> e.getText().contains("Beans")).map(e -> getPriceVeggies(e)).toList();
+            //System.out.println(price);
+            price.forEach(e -> System.out.println(e));
 
-        //System.out.println(price);
-        price.forEach(e -> System.out.println(e));
-
-        if(price.size() < 1) {
-            driver.findElement(By.cssSelector("[aria-label='Next']"));
-        }
+            if (price.size() < 1) {
+                driver.findElement(By.cssSelector("[aria-label='Next']")).click();
+            }
+        } while (price.size() < 1);
 
         System.exit(0);
     }
