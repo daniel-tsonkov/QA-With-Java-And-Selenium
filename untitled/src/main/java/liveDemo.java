@@ -42,7 +42,7 @@ public class liveDemo {
             if (price.isEmpty()) {
                 driver.findElement(By.cssSelector("[aria-label='Next']")).click();
             }
-        } while (price.isEmpty()); //
+        } while (price.isEmpty());
 
         System.exit(0);
     }
