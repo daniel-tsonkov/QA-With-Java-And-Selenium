@@ -34,15 +34,15 @@ public class liveDemo {
         List<String> price;
         do {
             List<WebElement> rows = driver.findElements(By.xpath("//tr/td[1]"));
-            price = rows.stream().filter(e -> e.getText().contains("Rice")).map(e -> getPriceVeggies(e)).toList();
+            price = rows.stream().filter(e -> e.getText().contains("Rice")).map(liveDemo::getPriceVeggies).toList();
 
             //System.out.println(price);
-            price.forEach(e -> System.out.println(e));
+            price.forEach(System.out::println);
 
-            if (price.size() < 1) {
+            if (price.isEmpty()) {
                 driver.findElement(By.cssSelector("[aria-label='Next']")).click();
             }
-        } while (price.size() < 1); //
+        } while (price.isEmpty()); //
 
         System.exit(0);
     }
