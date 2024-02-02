@@ -12,6 +12,7 @@ public class filter {
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
         driver.findElement(By.id("search-field")).sendKeys("Rice");
+        driver.findElement(By.xpath("search-field"));
 
         System.exit(0);//
     }
