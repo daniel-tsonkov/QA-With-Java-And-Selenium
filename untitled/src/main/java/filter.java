@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import java.time.Duration;
 import java.util.List;
@@ -20,6 +21,8 @@ public class filter {
 
         List<WebElement> filteredList = veggies.stream().filter(e -> e.getText().contains("Rice")).collect(Collectors.toList());
         System.out.println(filteredList.size());
+
+        Assert.assertEquals(veggies, filteredList);
 
         System.exit(0);//
     }
