@@ -17,8 +17,12 @@ public class relativeLocator {
         WebElement nameEditBox = driver.findElement(By.cssSelector("[name='name']"));
         System.out.println(driver.findElement(with(By.tagName("label")).above(nameEditBox)).getText());
 
-        WebElement dateOfBirth = driver.findElement(By.cssSelector("[for='dateofBirth']"));
-        driver.findElement(with(By.tagName("input")).below(dateOfBirth)).click();
+        //WebElement dateOfBirth = driver.findElement(By.cssSelector("[for='dateofBirth']"));
+        //driver.findElement(with(By.tagName("input")).below(dateOfBirth)).click();
+
+        //checkBox
+        WebElement iceCreamLabel = driver.findElement(By.xpath("//label[text()='Check me out if you Love IceCreams!']"));
+        driver.findElement(with(By.tagName("input")).toLeftOf(iceCreamLabel)).click();
 
         System.exit(0);
     }
