@@ -1,8 +1,11 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class filter {
     public static void main(String[] args) {
@@ -12,7 +15,11 @@ public class filter {
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
         driver.findElement(By.id("search-field")).sendKeys("Rice");
-        driver.findElement(By.xpath("search-field"));
+        List<WebElement> veggies = driver.findElements(By.xpath("search-field"));
+        System.out.println(veggies.size());
+
+        List<WebElement> filteredList = veggies.stream().filter(e -> e.getText().contains("Rice")).collect(Collectors.toList());
+        System.out.println(filteredList.size());
 
         System.exit(0);//
     }
