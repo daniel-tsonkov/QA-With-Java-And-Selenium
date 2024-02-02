@@ -1,7 +1,11 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+
+import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
 public class relativeLocator {
     public static void main(String[] args) {
@@ -10,7 +14,8 @@ public class relativeLocator {
         driver.get("https://rahulshettyacademy.com/angularpractice/");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(20000));
 
-
+        WebElement nameEditBox = driver.findElement(By.cssSelector("[name='name']"));
+        System.out.println(driver.findElement(with(By.tagName("label")).above(nameEditBox)).getText());
 
         System.exit(0);
     }
