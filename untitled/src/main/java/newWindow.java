@@ -1,9 +1,7 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WindowType;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.File;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
@@ -31,6 +29,9 @@ public class newWindow {
 
         WebElement name = driver.findElement(By.cssSelector("[name='name']"));
         name.sendKeys(courseName);
+        File webElementScreenShot = name.getScreenshotAs(OutputType.FILE);
+
+
 
 
         System.exit(0);
