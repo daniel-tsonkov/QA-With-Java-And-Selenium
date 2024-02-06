@@ -24,7 +24,8 @@ public class newWindow {
         driver.get("https://rahulshettyacademy.com/#/index");
 
         String courseName = driver.findElements(By.cssSelector("a[href*='https://courses.rahulshettyacademy.com/p']")).get(7).getText();
-        System.out.println(courseName);
+        //System.out.println(courseName);
+        driver.switchTo().window(childWindow).close(); // close the specific tab
         driver.switchTo().window(parentWindow);
 
         driver.findElement(By.cssSelector("[name='name']")).sendKeys(courseName);
