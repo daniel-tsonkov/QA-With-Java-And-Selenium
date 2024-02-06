@@ -4,7 +4,6 @@ import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -24,9 +23,11 @@ public class newWindow {
         driver.switchTo().window(childWindow);
         driver.get("https://rahulshettyacademy.com/#/index");
 
-        String courseName = driver.findElement(By.cssSelector("a[href*='https://courses.rahulshettyacademy.com/p']")).getText();
+        String courseName = driver.findElements(By.cssSelector("a[href*='https://courses.rahulshettyacademy.com/p']")).get(7).getText();
         System.out.println(courseName);
         driver.switchTo().window(parentWindow);
+
+        driver.findElement(By.cssSelector("[name='name']")).sendKeys(courseName);
 
 
         System.exit(0);
