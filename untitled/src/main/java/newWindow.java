@@ -33,7 +33,7 @@ public class newWindow {
         name.sendKeys(courseName);
         File webElementScreenShot = name.getScreenshotAs(OutputType.FILE);
 
-        FileUtils.copyFile(webElementScreenShot, new File("Logo.png"));
+        FileUtils.copyFile(webElementScreenShot, new File("Logo.png")); //save to folder with the project
 
 
         System.exit(0);
