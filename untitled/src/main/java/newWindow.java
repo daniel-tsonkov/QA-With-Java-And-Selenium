@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,11 +17,14 @@ public class newWindow {
 
         driver.switchTo().newWindow(WindowType.TAB);
 
-        Set<String> handles = Collections.singleton(driver.getWindowHandle());
+        Set<String> handles = driver.getWindowHandles();
         Iterator<String> iterator = handles.iterator();
         String parentWindow = iterator.next();
         String childWindow = iterator.next();
         driver.switchTo().window(childWindow);
+        driver.get("https://rahulshettyacademy.com/#/index");
+
+        driver.findElement(By.cssSelector("a[href*='https://courses.rahulshettyacademy.com/p']"));
 
 
         System.exit(0);
