@@ -31,10 +31,13 @@ public class newWindow {
 
         WebElement name = driver.findElement(By.cssSelector("[name='name']"));
         name.sendKeys(courseName);
-        File webElementScreenShot = name.getScreenshotAs(OutputType.FILE);
+        //get screenshot
+        //File webElementScreenShot = name.getScreenshotAs(OutputType.FILE);
+        //FileUtils.copyFile(webElementScreenShot, new File("Logo.png")); //save to folder with the project
 
-        FileUtils.copyFile(webElementScreenShot, new File("Logo.png")); //save to folder with the project
-
+        //get height and width
+        System.out.println(name.getRect().getDimension().getHeight());
+        System.out.println(name.getRect().getDimension().getWidth());
 
         System.exit(0);
     }
