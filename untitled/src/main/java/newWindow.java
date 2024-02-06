@@ -3,6 +3,9 @@ import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.Set;
 
 public class newWindow {
     public static void main(String[] args) {
@@ -13,6 +16,11 @@ public class newWindow {
 
         driver.switchTo().newWindow(WindowType.TAB);
 
+        Set<String> handles = Collections.singleton(driver.getWindowHandle());
+        Iterator<String> iterator = handles.iterator();
+        String parentWindow = iterator.next();
+        String childWindow = iterator.next();
+        driver.switchTo().window(childWindow);
 
 
         System.exit(0);
