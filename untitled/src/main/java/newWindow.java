@@ -1,13 +1,15 @@
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
 public class newWindow {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize(); //run window in maximize mode
         driver.get("https://rahulshettyacademy.com/angularpractice/");
@@ -31,7 +33,7 @@ public class newWindow {
         name.sendKeys(courseName);
         File webElementScreenShot = name.getScreenshotAs(OutputType.FILE);
 
-
+        FileUtils.copyFile(webElementScreenShot, new File("Logo.png"));
 
 
         System.exit(0);
