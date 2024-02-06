@@ -1,5 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -28,7 +29,8 @@ public class newWindow {
         driver.switchTo().window(childWindow).close(); // close the specific tab
         driver.switchTo().window(parentWindow);
 
-        driver.findElement(By.cssSelector("[name='name']")).sendKeys(courseName);
+        WebElement name = driver.findElement(By.cssSelector("[name='name']"));
+        name.sendKeys(courseName);
 
 
         System.exit(0);
