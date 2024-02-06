@@ -24,7 +24,9 @@ public class newWindow {
         driver.switchTo().window(childWindow);
         driver.get("https://rahulshettyacademy.com/#/index");
 
-        driver.findElement(By.cssSelector("a[href*='https://courses.rahulshettyacademy.com/p']"));
+        String courseName = driver.findElement(By.cssSelector("a[href*='https://courses.rahulshettyacademy.com/p']")).getText();
+        System.out.println(courseName);
+        driver.switchTo().window(parentWindow);
 
 
         System.exit(0);
