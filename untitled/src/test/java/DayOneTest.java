@@ -6,4 +6,9 @@ public class DayOneTest {
         System.out.println("test"); //test only
     }
 
+    @Test
+    public void TestTwo() {
+        System.out.println("zzz");
+    }
+
 }
