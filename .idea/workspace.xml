@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cf72ed82-1a30-4fb9-8993-750c2fe9fb86" name="Changes" comment="UP">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_82.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_service_auto_service_annotations_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_18_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_32_1_2_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_2_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dev_failsafe_failsafe_3_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_api_1_28_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_api_events_1_28_0_alpha.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_context_1_28_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_exporter_logging_1_28_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_extension_incubator_1_28_0_alpha.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_1_28_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_common_1_28_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_extension_autoconfigure_1_28_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_extension_autoconfigure_spi_1_28_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_logs_1_28_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_metrics_1_28_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_trace_1_28_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_semconv_1_28_0_alpha.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_14_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_33_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chromium_driver_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v118_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v119_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v120_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v85_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_http_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_json_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_manager_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_os_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_4_16_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_7_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/untitled.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;daniel-tsonkov&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="40e2ae6a-7dba-404e-83d5-391956160d93" />
+        <option name="url" value="https://github.com/daniel-tsonkov/QA-With-Java-And-Selenium.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2a2gZ9chEaYTstNMXLA8fFq9ORV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Assigment.executor": "Run",
+    "Application.AutoSuggestive.executor": "Run",
+    "Application.Dropdown.executor": "Run",
+    "Application.StaticDropDown.executor": "Run",
+    "Application.UpdatedDropdown.executor": "Run",
+    "Application.WindowsActivities.executor": "Run",
+    "Application.base.executor": "Run",
+    "Application.brokenLinks.executor": "Run",
+    "Application.calendar.executor": "Run",
+    "Application.javaScriptExecutor.executor": "Run",
+    "Application.liveDemo.executor": "Run",
+    "Application.locators.executor": "Run",
+    "Application.locators2.executor": "Run",
+    "Application.locators3.executor": "Run",
+    "Application.main.executor": "Run",
+    "Application.scope.executor": "Run",
+    "Application.tests.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "openjdk-18",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/a1/IdeaProjects/JavaOOP",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-bfa3237e" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-249ae16d76d6-29f91840" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-76dd8dae" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-78a6f59c" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf72ed82-1a30-4fb9-8993-750c2fe9fb86" name="Changes" comment="" />
+      <created>1703522140793</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703522140793</updated>
+    </task>
+    <task id="LOCAL-00086" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705157818595</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1705157818595</updated>
+    </task>
+    <task id="LOCAL-00087" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705158058426</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1705158058426</updated>
+    </task>
+    <task id="LOCAL-00088" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705180031051</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1705180031052</updated>
+    </task>
+    <task id="LOCAL-00089" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705180518498</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1705180518498</updated>
+    </task>
+    <task id="LOCAL-00090" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705180889947</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1705180889947</updated>
+    </task>
+    <task id="LOCAL-00091" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705181126114</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1705181126114</updated>
+    </task>
+    <task id="LOCAL-00092" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705181198630</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1705181198630</updated>
+    </task>
+    <task id="LOCAL-00093" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705181562133</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1705181562133</updated>
+    </task>
+    <task id="LOCAL-00094" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705255182289</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1705255182290</updated>
+    </task>
+    <task id="LOCAL-00095" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705255497856</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1705255497856</updated>
+    </task>
+    <task id="LOCAL-00096" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705255680802</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1705255680802</updated>
+    </task>
+    <task id="LOCAL-00097" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705257340786</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1705257340786</updated>
+    </task>
+    <task id="LOCAL-00098" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705257406022</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1705257406022</updated>
+    </task>
+    <task id="LOCAL-00099" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705257785715</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1705257785715</updated>
+    </task>
+    <task id="LOCAL-00100" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705258421193</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1705258421193</updated>
+    </task>
+    <task id="LOCAL-00101" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705260798018</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1705260798018</updated>
+    </task>
+    <task id="LOCAL-00102" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705264307298</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1705264307298</updated>
+    </task>
+    <task id="LOCAL-00103" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705264747465</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1705264747465</updated>
+    </task>
+    <task id="LOCAL-00104" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705264764919</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1705264764919</updated>
+    </task>
+    <task id="LOCAL-00105" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705264795322</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1705264795322</updated>
+    </task>
+    <task id="LOCAL-00106" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705265185878</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1705265185878</updated>
+    </task>
+    <task id="LOCAL-00107" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705265505816</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1705265505816</updated>
+    </task>
+    <task id="LOCAL-00108" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705265772049</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1705265772049</updated>
+    </task>
+    <task id="LOCAL-00109" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705340815449</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1705340815449</updated>
+    </task>
+    <task id="LOCAL-00110" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705340848678</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1705340848678</updated>
+    </task>
+    <task id="LOCAL-00111" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705341066735</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1705341066735</updated>
+    </task>
+    <task id="LOCAL-00112" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705341254803</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1705341254803</updated>
+    </task>
+    <task id="LOCAL-00113" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705341840737</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1705341840737</updated>
+    </task>
+    <task id="LOCAL-00114" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705342450347</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1705342450348</updated>
+    </task>
+    <task id="LOCAL-00115" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705342909229</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1705342909229</updated>
+    </task>
+    <task id="LOCAL-00116" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705343012133</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1705343012133</updated>
+    </task>
+    <task id="LOCAL-00117" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705343578722</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1705343578722</updated>
+    </task>
+    <task id="LOCAL-00118" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705343733347</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1705343733347</updated>
+    </task>
+    <task id="LOCAL-00119" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705343903578</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1705343903578</updated>
+    </task>
+    <task id="LOCAL-00120" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705343979580</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1705343979580</updated>
+    </task>
+    <task id="LOCAL-00121" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705850342275</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1705850342276</updated>
+    </task>
+    <task id="LOCAL-00122" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705850639667</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1705850639668</updated>
+    </task>
+    <task id="LOCAL-00123" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705850991367</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1705850991367</updated>
+    </task>
+    <task id="LOCAL-00124" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705851423741</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1705851423742</updated>
+    </task>
+    <task id="LOCAL-00125" summary="UP">
+      <option name="closed" value="true" />
+      <created>1705851500662</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1705851500663</updated>
+    </task>
+    <task id="LOCAL-00126" summary="UP">
+      <option name="closed" value="true" />
+      <created>1706815296079</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1706815296084</updated>
+    </task>
+    <task id="LOCAL-00127" summary="UP">
+      <option name="closed" value="true" />
+      <created>1706816436245</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1706816436245</updated>
+    </task>
+    <task id="LOCAL-00128" summary="UP">
+      <option name="closed" value="true" />
+      <created>1706816681268</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1706816681268</updated>
+    </task>
+    <task id="LOCAL-00129" summary="UP">
+      <option name="closed" value="true" />
+      <created>1706816943035</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1706816943035</updated>
+    </task>
+    <task id="LOCAL-00130" summary="UP">
+      <option name="closed" value="true" />
+      <created>1706817109878</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1706817109880</updated>
+    </task>
+    <task id="LOCAL-00131" summary="UP">
+      <option name="closed" value="true" />
+      <created>1706817174399</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1706817174399</updated>
+    </task>
+    <task id="LOCAL-00132" summary="UP">
+      <option name="closed" value="true" />
+      <created>1706817243714</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1706817243714</updated>
+    </task>
+    <task id="LOCAL-00133" summary="UP">
+      <option name="closed" value="true" />
+      <created>1706817310330</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1706817310330</updated>
+    </task>
+    <task id="LOCAL-00134" summary="UP">
+      <option name="closed" value="true" />
+      <created>1706817329362</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1706817329362</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="UP" />
+    <option name="LAST_COMMIT_MESSAGE" value="UP" />
+  </component>
+</project>
