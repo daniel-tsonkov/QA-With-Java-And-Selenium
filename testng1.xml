@@ -3,7 +3,7 @@
 <suite name="Loan Department">
     <test name="Personal loans">
        <packages>
-           <package name="zzz"/>
+           <package name=""/>
        </packages>
     </test>
 </suite>

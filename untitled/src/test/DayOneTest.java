@@ -1,3 +1,4 @@
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class DayOneTest {
@@ -11,4 +12,8 @@ public class DayOneTest {
         System.out.println("zzz");
     }
 
+    @AfterTest
+    public void lastExecution() {
+        System.out.println("This will be the last");
+    }
 }

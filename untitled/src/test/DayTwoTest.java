@@ -9,6 +9,6 @@ public class DayTwoTest {
 
     @BeforeTest
     public void prerequister() {
-
+        System.out.println("First execute");
     }
 }

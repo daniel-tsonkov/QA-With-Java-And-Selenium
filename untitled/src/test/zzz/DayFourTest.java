@@ -15,7 +15,7 @@ public class DayFourTest {
 
     @Test
     public void MobileLogOutHome() {
-        System.out.println("MobilelogOut");
+        System.out.println("MobilelogOutzzzzzzzzzzzzzzzz");
     }
 
     @Test
