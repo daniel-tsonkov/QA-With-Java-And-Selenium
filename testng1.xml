@@ -2,19 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Loan Department">
     <test name="Personal loan">
-        <classes>
-            <class name="DayOneTest"/>
-            <class name="DayTwoTest"/>
-            <class name="DayThreeTest"/>
-        </classes>
-    </test>
-    <test name="Car Loan">
-        <classes>
-            <class name="DayFourTest">
-                <methods>
-                    <exclude name="Mobile.*"/>
-                </methods>
-            </class>
-        </classes>
+       <packages>
+           <package name="test"/>
+       </packages>
     </test>
 </suite>
