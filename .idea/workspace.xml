@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf72ed82-1a30-4fb9-8993-750c2fe9fb86" name="Changes" comment="19022024">
-      <change beforePath="$PROJECT_DIR$/untitled/src/test/DayCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/DayCTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="cf72ed82-1a30-4fb9-8993-750c2fe9fb86" name="Changes" comment="19022024" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,14 +105,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703522140793</updated>
-    </task>
-    <task id="LOCAL-00098" summary="UP">
-      <option name="closed" value="true" />
-      <created>1705257406022</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1705257406022</updated>
     </task>
     <task id="LOCAL-00099" summary="UP">
       <option name="closed" value="true" />
@@ -489,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708349569295</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="19022024">
+      <created>1708349958332</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1708349958332</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

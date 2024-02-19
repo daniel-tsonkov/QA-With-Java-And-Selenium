@@ -1,9 +1,10 @@
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class DayCTest {
+    @BeforeClass
+    public void beforeClass() {
+        System.out.println("Executin befor avery method in this class from C");
+    }
     @Test
     public void ploa() {
         System.out.println("Day C1");
