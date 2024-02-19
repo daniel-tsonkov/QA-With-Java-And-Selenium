@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cf72ed82-1a30-4fb9-8993-750c2fe9fb86" name="Changes" comment="19022024">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/test/DayTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/DayTwoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,14 +106,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703522140793</updated>
-    </task>
-    <task id="LOCAL-00093" summary="UP">
-      <option name="closed" value="true" />
-      <created>1705181562133</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1705181562133</updated>
     </task>
     <task id="LOCAL-00094" summary="UP">
       <option name="closed" value="true" />
@@ -491,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708334439942</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="19022024">
+      <created>1708335006597</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335006597</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
