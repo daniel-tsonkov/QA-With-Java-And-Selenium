@@ -11,4 +11,15 @@
             <package name=""/>
         </packages>
     </test>
+
+    <test name="Run GroupB">
+        <groups>
+            <run>
+                <include name="groupB"/>
+            </run>
+        </groups>
+        <packages>
+            <package name=""/>
+        </packages>
+    </test>
 </suite>

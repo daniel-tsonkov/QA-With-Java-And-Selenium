@@ -9,9 +9,9 @@
       <change beforePath="$PROJECT_DIR$/testng2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled/src/test/DayATest.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/DayATest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled/src/test/DayBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/DayBTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/test/DayCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/DayCTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled/src/test/DayDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/DayDTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/target/test-classes/DayCTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/test-classes/DayCTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/test-classes/DayATest.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/test-classes/DayATest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/target/test-classes/DayBTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/test-classes/DayBTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,14 +113,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703522140793</updated>
-    </task>
-    <task id="LOCAL-00100" summary="UP">
-      <option name="closed" value="true" />
-      <created>1705258421193</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1705258421193</updated>
     </task>
     <task id="LOCAL-00101" summary="UP">
       <option name="closed" value="true" />
@@ -493,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708350672966</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="19022024">
+      <created>1708351759165</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1708351759165</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

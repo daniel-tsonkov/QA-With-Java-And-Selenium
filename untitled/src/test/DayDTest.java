@@ -3,7 +3,7 @@ import org.testng.annotations.Test;
 
 public class DayDTest {
     @Test(groups = {"groupA"})
-    public void WebLoginHomeLoan() {
+    public void AWebLoginHomeLoan() {
         System.out.println("Day D1");
     }
 

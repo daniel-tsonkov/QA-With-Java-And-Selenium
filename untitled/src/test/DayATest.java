@@ -2,7 +2,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class DayATest {
-    @Test(groups = {"groupA"})
+    @Test(groups = {"groupA", "groupB"})
     public void Demo() {
         System.out.println("Day A1"); //test only
     }
