@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" name="Personal">
+        <classes>
+            <class name="DayOneTest"/>
+            <class name="DayTwoTest"/>
+        </classes>
+    </test>
+    <test verbose="2" name="Proffesional">
+        <classes>
+            <class name="DayThreeTest"/>
+        </classes>
+    </test>
+</suite>
