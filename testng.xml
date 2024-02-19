@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" name="Personal">
+<suite name="Loan Department">
+    <test name="Personal loan">
         <classes>
             <class name="DayOneTest"/>
             <class name="DayTwoTest"/>
         </classes>
     </test>
-    <test verbose="2" name="Proffesional">
+    <test name="Car Loan">
         <classes>
             <class name="DayThreeTest"/>
         </classes>
