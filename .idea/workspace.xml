@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf72ed82-1a30-4fb9-8993-750c2fe9fb86" name="Changes" comment="19022024">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/test/DayATest.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/DayATest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/test/DayBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/DayBTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/test/DayDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/test/DayDTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/target/test-classes/DayATest.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/test-classes/DayATest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/target/test-classes/DayBTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/target/test-classes/DayBTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,14 +107,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703522140793</updated>
-    </task>
-    <task id="LOCAL-00101" summary="UP">
-      <option name="closed" value="true" />
-      <created>1705260798018</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1705260798018</updated>
     </task>
     <task id="LOCAL-00102" summary="UP">
       <option name="closed" value="true" />
@@ -492,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708351759165</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="19022024">
+      <created>1708352371533</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1708352371533</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

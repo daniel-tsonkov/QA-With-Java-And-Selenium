@@ -5,6 +5,7 @@
         <groups>
             <run>
                 <include name="groupA"/>
+                <!--<exclude name="groupA"/>-->
             </run>
         </groups>
         <packages>
