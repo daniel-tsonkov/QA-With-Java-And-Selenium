@@ -8,7 +8,7 @@ public class DayFourTest {
 
     @Test
     public void MobileLoginHomeLoan() {
-        System.out.println("mobileloginhome");
+        System.out.println("Mobileloginhome");
     }
 
     @Test

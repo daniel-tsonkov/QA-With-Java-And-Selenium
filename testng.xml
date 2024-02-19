@@ -5,11 +5,16 @@
         <classes>
             <class name="DayOneTest"/>
             <class name="DayTwoTest"/>
+            <class name="DayThreeTest"/>
         </classes>
     </test>
     <test name="Car Loan">
-        <classes>
-            <class name="DayThreeTest"/>
+    <classes>
+        <class name="DayFourTest">
+            <methods>
+                <exclude name="LoginApiHomeLoan"/>
+            </methods>
+        </class>
         </classes>
     </test>
 </suite>
