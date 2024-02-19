@@ -2,12 +2,12 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 
 public class DayDTest {
-    @Test
+    @Test(groups = {"groupA"})
     public void WebLoginHomeLoan() {
         System.out.println("Day D1");
     }
 
-    @Test
+    @Test(groups = {"groupA"})
     public void MobileLoginHomeLoan() {
         System.out.println("Day D2");
     }

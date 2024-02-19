@@ -3,9 +3,15 @@ import org.testng.annotations.*;
 public class DayCTest {
     @BeforeClass
     public void beforeClass() {
-        System.out.println("Executin befor avery method in this class from C");
+        System.out.println("Executing before avery method in this class from C");
     }
-    @Test
+
+    @AfterClass
+    public void afterClass() {
+        System.out.println("Executing after avery method in this class from C");
+    }
+
+    @Test(groups = {"groupA"})
     public void ploa() {
         System.out.println("Day C1");
     }

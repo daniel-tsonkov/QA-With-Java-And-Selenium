@@ -2,7 +2,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class DayBTest {
-    @Test
+    @Test(groups = {"groupA"})
     public void ploan() {
         System.out.println("Day B");
     }
