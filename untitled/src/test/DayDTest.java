@@ -1,29 +1,29 @@
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 
-public class DayFourTest {
+public class DayDTest {
     @Test
     public void WebLoginHomeLoan() {
-        System.out.println("webloginhome");
+        System.out.println("Day D1");
     }
 
     @Test
     public void MobileLoginHomeLoan() {
-        System.out.println("Mobileloginhome");
+        System.out.println("Day D2");
     }
 
     @Test
     public void MobileLogOutHome() {
-        System.out.println("MobilelogOut");
+        System.out.println("Day D3");
     }
 
     @Test
     public void LoginApiHomeLoan() {
-        System.out.println("loginapihomeloan");
+        System.out.println("Day D4");
     }
 
     @AfterSuite
     public void afterSuit() {
-        System.out.println("After fuit");
+        System.out.println("After fuit from D");
     }
 }

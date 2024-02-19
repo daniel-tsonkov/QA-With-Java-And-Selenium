@@ -1,19 +1,19 @@
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-public class DayOneTest {
+public class DayATest {
     @Test
     public void Demo() {
-        System.out.println("test"); //test only
+        System.out.println("Day A1"); //test only
     }
 
     @Test
     public void TestTwo() {
-        System.out.println("zzz");
+        System.out.println("Day A2");
     }
 
     @AfterTest
     public void lastExecution() {
-        System.out.println("This will be the last");
+        System.out.println("This will be the last from A");
     }
 }

@@ -1,14 +1,14 @@
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class DayTwoTest {
+public class DayBTest {
     @Test
     public void ploan() {
-        System.out.println("AAA");
+        System.out.println("Day B");
     }
 
     @BeforeTest
     public void prerequister() {
-        System.out.println("First execute");
+        System.out.println("First execute From B");
     }
 }

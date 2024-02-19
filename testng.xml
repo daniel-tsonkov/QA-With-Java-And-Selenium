@@ -3,14 +3,14 @@
 <suite name="Loan Department">
     <test name="Personal loan">
         <classes>
-            <class name="DayOneTest"/>
-            <class name="DayTwoTest"/>
-            <class name="DayThreeTest"/>
+            <class name="DayATest"/>
+            <class name="DayBTest"/>
+            <class name="DayCTest"/>
         </classes>
     </test>
     <test name="Car Loan">
     <classes>
-        <class name="DayFourTest">
+        <class name="DayDTest">
             <methods>
                 <exclude name="Mobile.*"/>
             </methods>
