@@ -1,3 +1,4 @@
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 
 public class DayFourTest {
@@ -19,5 +20,10 @@ public class DayFourTest {
     @Test
     public void LoginApiHomeLoan() {
         System.out.println("loginapihomeloan");
+    }
+
+    @AfterSuite
+    public void afterSuit() {
+        System.out.println("After fuit");
     }
 }
