@@ -12,6 +12,11 @@ public class DayFourTest {
     }
 
     @Test
+    public void MobileLogOutHome() {
+        System.out.println("MobilelogOut");
+    }
+
+    @Test
     public void LoginApiHomeLoan() {
         System.out.println("loginapihomeloan");
     }

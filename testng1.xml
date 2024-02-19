@@ -9,12 +9,12 @@
         </classes>
     </test>
     <test name="Car Loan">
-    <classes>
-        <class name="DayFourTest">
-            <methods>
-                <exclude name="Mobile.*"/>
-            </methods>
-        </class>
+        <classes>
+            <class name="DayFourTest">
+                <methods>
+                    <exclude name="Mobile.*"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
